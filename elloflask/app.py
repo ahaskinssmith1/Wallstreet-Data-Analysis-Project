@@ -2,25 +2,26 @@ from flask import Flask, render_template, request, redirect
 
 app=Flask(__name__,template_folder='template')
     
-STUDENTS = {}
+# deleted STUDENTS = {}
+COMPANY = {}
+# deleted COURSES = ['Python', 'Web', 'Blockchain', 'UI']
 
-COURSES = ['Python', 'Web', 'Blockchain', 'UI']
-
-@app.route("/form", methods=["GET", "POST"])
-def register():
+@app.route("/", methods=["GET", "POST"])
+def Search():
     if request.method == "POST":
         name = request.form["name"]
-        course = request.form.get("course")
-        STUDENTS[name] = course
-        return redirect("/students")
+        company = request.form.get("company") # chnage from course to comapny
+        COMPANY[name] = company
+        return redirect("/company")
 
     else:
-        return render_template("form.html", courses=COURSES)
+        return render_template("form.html")
 
 
-@app.route("/students")
+@app.route("/company")
 def students():
-    return render_template("students.html", students=STUDENTS)
+    
+    return render_template("company.html", company=COMPANY)
 
 if __name__=="__main__":
     app.run(port=5001, debug=True)

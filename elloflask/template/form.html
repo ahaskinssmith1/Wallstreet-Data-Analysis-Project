@@ -7,22 +7,23 @@
     <title>Register</title>
   </head>
   <body>
-    <h1>Register</h1>
+    <h1>Wallstreet Data Analysis</h1>
+    <p>Please enter a company name:</p>
     <form action="" method="post">
       <input
         autocomplete="off"
         autofocus
         name="name"
-        placeholder="Name"
+        placeholder="Company Name"
         type="text"
       />
       {% for course in courses %}
       <label>
-        <input name="course" type="radio" value="{{ course }}" /> {{ course }}
+        <input name="compnay_name" type="text" value="{{ course }}" /> {{ course }}
       </label>
       {% endfor %}
       <div>
-      <input type="submit" value="Register" /></div>
+      <input type="submit" value="Search" /></div>
     </form>
   </body>
 </html>
