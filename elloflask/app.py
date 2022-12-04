@@ -7,18 +7,29 @@ COMPANY = {}
 # deleted COURSES = ['Python', 'Web', 'Blockchain', 'UI']
 
 @app.route("/", methods=["GET", "POST"])
-def Search():
+def Search_Company():
     if request.method == "POST":
         name = request.form["name"]
-        company = request.form.get("company") # chnage from course to comapny
+        company = request.form.get("company") 
         COMPANY[name] = company
-        return redirect("/company")
+        return redirect("/ticker")
 
     else:
         return render_template("form.html")
 
+@app.route("/ticker", methods=["GET", "POST"])
+def Search_Ticker():
+    if request.method == "POST":
+        ticker_name = request.form["ticker_name"]
+        ticker = request.form.get("ticker") 
+        COMPANY[ticker_name] = ticker
+        return redirect("/company")
 
-@app.route("/company")
+    else:
+        return render_template("tickerform.html")
+
+
+@app.route("/company", methods=["GET", "POST"])
 def company_info():
     company = request.args.get()
     return render_template("company.html", company=COMPANY)

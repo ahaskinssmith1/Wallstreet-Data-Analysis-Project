@@ -8,18 +8,18 @@
   </head>
   <body>
     <h1>Wallstreet Data Analysis</h1>
-    <p>Please enter a company name:</p>
+    <p>Please enter the companys ticker:</p>
     <form action="" method="post">
       <input
         autocomplete="off"
         autofocus
-        name="name"
-        placeholder="Company Name"
+        ticker_name="ticker_name"
+        placeholder="Company Ticker"
         type="text"
       />
       {% for course in courses %}
       <label>
-        <input name="compnay_name" type="text" value="{{ course }}" /> {{ course }}
+        <input name="company_ticker" type="text" value="{{ course }}" /> {{ course }}
       </label>
       {% endfor %}
       <div>
