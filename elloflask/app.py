@@ -19,8 +19,8 @@ def Search():
 
 
 @app.route("/company")
-def students():
-    
+def company_info():
+    company = request.args.get()
     return render_template("company.html", company=COMPANY)
 
 if __name__=="__main__":
