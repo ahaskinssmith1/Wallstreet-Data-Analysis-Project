@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 
-app=Flask(__name__,template_folder='template')
+app=Flask(__name__, template_folder='template')
     
 # deleted STUDENTS = {}
 COMPANY = {}
@@ -20,9 +20,9 @@ def Search_Company():
 @app.route("/ticker", methods=["GET", "POST"])
 def Search_Ticker():
     if request.method == "POST":
-        ticker_name = request.form["ticker_name"]
+        name = request.form["name"]
         ticker = request.form.get("ticker") 
-        COMPANY[ticker_name] = ticker
+        COMPANY[name] = ticker
         return redirect("/company")
 
     else:
@@ -31,7 +31,7 @@ def Search_Ticker():
 
 @app.route("/company", methods=["GET", "POST"])
 def company_info():
-    company = request.args.get()
+    #company = request.args.get()
     return render_template("company.html", company=COMPANY)
 
 if __name__=="__main__":
