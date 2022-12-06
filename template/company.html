@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sentiment Analysis</title>
+    <title></title>
   </head>
-  <body>
-    <h1>Wallstreet Data Analysis </h1>
-    <p1>Analysis Outputs</p1>
-    <div style = "font-weight:bolder">
-        {{ company }}: Sentiment Analysis: {{ sentiment }}. 
+  <body style = "background-image:url('https://images.unsplash.com/photo-1517026575980-3e1e2dedeab4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1098&q=80');"> 
+    <h1 style = "color:azure">Wallstreet Data Analysis </h1>
+    <p1 style = "color:azure">Analysis Outputs</p1>
+    <div , style = "font-size:x-large; color:azure; font-weight: bold;">
+      Sentiment Analysis: {{ sentiment }}. 
 
     </div>
-    <div>
+    <div style = "color:azure">
       Polarity score ranges from -1 to 1. A score of -1 indicates a highly negative sentiment found on r/stockmarket regarding {{company}}. A score of 1 indicates a highly positive sentiment found on r/stockmarket regarding {{company}}
 
     </div>
-    <div style = "font-weight:bolder">
-      {{ company }}: Hurst Exponent: {{ hurst }}. 
+    <div  , style = "font-size:x-large; color:azure; font-weight: bold;">
+      Hurst Exponent: {{ hurst }}. 
       
     </div>
-    <div>
+    <div style = "color:azure">
       Hurst exponent output ranges from 0 to 1. Value less than 0.5 indicates that the share price has a tendency to revert to the mean price. Value of 0.5 indicates that the share price follows a completely random walk. Value greater than 0.5 indicates that the share price is trending up or down. 
 
     </div>

@@ -55,9 +55,9 @@ def interpret_hurst(ticker):
     if hurst_exp < 0.5:
         return f"The Hurst Exponent is {hurst_exp:.4f} which signifies that the stock price is mean reverting"
     elif hurst_exp == 0.5:
-        return f"The The Hurst Exponent is {hurst_exp:.4f} which signifies that the stock price follows a geomtric random walk"
+        return f"The Hurst Exponent is {hurst_exp:.4f} which signifies that the stock price follows a geomtric random walk"
     else:
-        return f"The The Hurst Exponent is {hurst_exp:.4f} which signifies that the stock price is trending"
+        return f"The Hurst Exponent is {hurst_exp:.4f} which signifies that the stock price is trending"
 
 
 def main():
