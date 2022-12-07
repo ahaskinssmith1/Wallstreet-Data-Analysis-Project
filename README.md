@@ -12,7 +12,7 @@ The Wallstreet Data Analysis project is for anyone who is looking for a convenie
 3. run the app.py and follow the website link which will be given as an output
 4. Input the necessary information into the search bar on the Wall Street Data website (company name & ticker)
 
-# Packages 
+# Packages :file_folder:
 
 **Required packages for the app.py**
 
