@@ -4,7 +4,6 @@
 
 The Wallstreet Data Analysis project is for anyone who is looking for a convenient and very easy-to-use resource for gaining deeper insight into public opinions and market regimes for a publicly traded company. 
 
-
 # How to run it? :running:
 
 1. Access our code using the following https://github.com/ahaskinssmith1/Wallstreet-Data-Analysis-Project
@@ -16,36 +15,40 @@ The Wallstreet Data Analysis project is for anyone who is looking for a convenie
 
 # Required packages for the app.py :computer:
 
-from flask import Flask, render_template, request, redirect 
+- from flask import Flask, render_template, request, redirect 
 
-from sentiment_analysis import interpret_polarity
+- from sentiment_analysis import interpret_polarity
 
-from hurst_exponent1 import interpret_hurst
+- from hurst_exponent1 import interpret_hurst
 
 # Required packages for the hurst_exponent.py :mag:
 
-import numpy as np
+- import numpy as np
 
-import matplotlib.pyplot as plt
+- import matplotlib.pyplot as plt
 
-from hurst import compute_Hc, random_walk
+- from hurst import compute_Hc, random_walk
 
-import seaborn as sns
+- import seaborn as sns
 
-import pandas as pd
+- import pandas as pd
 
-import yfinance as yf
+- import yfinance as yf
 
 # Required packages for the sentiment_analysis.py :mag:
 
-praw
+- praw
 
-nltk
+- nltk
 
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.tokenize import wordpunct_tokenize
-from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+- from nltk.corpus import stopwords
+
+- from nltk.tokenize import word_tokenize
+
+- from nltk.tokenize import wordpunct_tokenize
+
+- from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+
 ## API Reference :key:
 
 #### Get keys
