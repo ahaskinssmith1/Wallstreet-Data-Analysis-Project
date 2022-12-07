@@ -7,7 +7,7 @@ The Wallstreet Data Analysis project is for anyone who is looking for a convenie
 # How to run it? :running:
 
 1. Access our code using the following https://github.com/ahaskinssmith1/Wallstreet-Data-Analysis-Project
-2. Download all the required packages listed below using the Command Prompt (pip install <package name>)
+2. Download all the required packages listed below using the Command Prompt (pip install *package name*)
 3. run the app.py and follow the website link which will be given as an output
 4. Input the necessary information into the search bar on the Wall Street Data website (company name & ticker)
 
