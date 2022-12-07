@@ -46,7 +46,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import wordpunct_tokenize
 from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
-## API Reference
+## API Reference :key:
 
 #### Get keys
 
