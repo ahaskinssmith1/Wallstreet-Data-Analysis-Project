@@ -14,7 +14,7 @@ The Wallstreet Data Analysis project is for anyone who is looking for a convenie
 
 # Packages :file_folder:
 
-**Required packages for the app.py**
+# Required packages for the app.py :computer:
 
 from flask import Flask, render_template, request, redirect 
 
@@ -22,7 +22,7 @@ from sentiment_analysis import interpret_polarity
 
 from hurst_exponent1 import interpret_hurst
 
-**Required packages for the hurst_exponent.py**
+# Required packages for the hurst_exponent.py :mag:
 
 import numpy as np
 
@@ -36,7 +36,7 @@ import pandas as pd
 
 import yfinance as yf
 
-**Required packages for the sentiment_analysis.py** 
+# Required packages for the sentiment_analysis.py :mag:
 
 praw
 
