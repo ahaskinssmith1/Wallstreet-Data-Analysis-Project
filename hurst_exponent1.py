@@ -1,9 +1,6 @@
 
 import numpy as np
-import matplotlib.pyplot as plt
 from hurst import compute_Hc, random_walk
-import seaborn as sns
-import pandas as pd
 import yfinance as yf
 
 
